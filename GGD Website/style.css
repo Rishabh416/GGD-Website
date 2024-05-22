@@ -1,0 +1,2820 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&display=swap');
+
+/*
+1024px - 696
+768px - 1380
+425px - 2064
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* NAV BAR (NavBar.jsx) */
+nav{
+    background-color: transparent;
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    padding: 0px 2vw;
+}
+
+nav div {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+    margin-top: 5vh;
+}
+
+nav div a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+nav div a img {
+    width: 3.5rem;
+}
+
+/* LANDING SECTION (Landing.jsx) */
+
+body {
+    /* background-color: aliceblue; */
+    /* background-image: url(src/components/2background.jpg); */
+    background-color: #f8fff8;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+p {
+    font-weight: 500;
+}
+
+@keyframes opacity {
+    from {opacity: 0}
+    to {opacity: 100}
+}
+
+.landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 0vw;
+}
+
+.landing div {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+}
+
+.landing img {
+    align-self: flex-start;
+    object-fit: contain;
+    position: absolute;
+    z-index: -1;
+    animation-name: opacity;
+    animation-duration: 3s;
+    width: 60vw;
+    margin-left: 21vw;
+    margin-top: 7vh;
+}
+
+.landing .backgroundTrans {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+    margin-top: -8vh;
+    width: 100vw;
+    margin-left: 0;
+}
+
+@keyframes rotate {
+    from {rotate: 0deg}
+    to {rotate: 360deg}
+}
+
+.landing .recyclingLogo {
+    width: 15vw;
+    animation-name: rotate;
+    animation-duration: 5s;
+    z-index: 1;
+    position: static;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.landing .logoContainer {
+    display: flex;
+    flex-direction: row;
+    /* background-color: black; */
+}
+
+.landing div h1 {
+    font-size: 5vw;
+    text-align: center;
+    color: #1d6023;
+    animation-name: opacity;
+    animation-duration: 3s;
+    width: 20rem;
+}
+
+.landing div h2 {
+    font-size: 3vw;
+    text-align: center;
+    font-weight: 500;
+    animation-name: opacity;
+    animation-duration: 3s;
+    margin-bottom: 1rem;
+}
+
+.landing div button {
+    font-size: 2.5vw;
+    padding: 5px 20px;
+    background-color: #1d6023;
+    color: #fff;
+    border-radius: 75px;
+    border: none;
+    font-weight: 700;
+    animation-name: opacity;
+    animation-duration: 3s;
+}
+
+/* FOUNDER MESSAGE (FounderMessage.jsx) */
+
+.founderMessage {
+    margin-top: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 3vw;
+}
+
+.founderMessage .profile {
+    padding: 2vw;
+    border-radius: 45px;
+}
+
+.founderMessage .profile img {
+    width: 25vw;
+    border-radius: 45px;
+    box-shadow: 0px 0px 30px 20px #d0f9c3;
+}
+
+.founderMessage .content {
+    width: 40vw;
+}
+
+.founderMessage .content h2 {
+    font-size: 3vw;
+    margin-bottom: 10px;
+    width: 48vw;
+    text-transform: uppercase;
+    color: #1d6023;
+}
+
+.founderMessage .content p {
+    font-size: 1.5vw;
+    width: 48vw;
+    text-justify: auto;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+}
+
+/* WHAT IS RECYCLING (WhatRecycling.jsx) */
+
+.whatRecycling {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 6vw;
+}
+
+.whatRecycling img {
+    width: 25vw;
+}
+
+.whatRecycling .content h2 {
+    font-size: 3vw;
+    margin-bottom: 10px;
+    width: 48vw;
+    text-transform: uppercase;
+    color: #1d6023;
+}
+
+.whatRecycling .content p {
+    font-size: 1.5vw;
+    width: 48vw;
+    text-justify: auto;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+}
+
+/* HOW CAN YOU CONTRIBUTE (HowContribute.jsx) */
+
+.howContribute {
+    margin-top: 5vh;
+    display: block;
+    text-align: center;
+    padding: 20px 12vw;
+}
+
+.howContribute .content h2 {
+    font-size: 3vw;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #1d6023;
+}
+
+.howContribute .content p {
+    font-size: 1.5vw;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+}
+
+.howContribute button {
+    margin-top: 3vh;
+    font-size: 2.5vw;
+    padding: 5px 20px;
+    background-color: #1d6023;
+    border-radius: 75px;
+    border: none;
+    font-weight: 700;
+}
+
+.howContribute button a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* STATISTICS (Statistic.jsx) */
+
+.statisticContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 3vw;
+}
+
+.heading {
+    margin-top: 5vh;
+    font-size: 3vw;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1d6023;
+}
+
+.statistic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+}
+
+.statistic img {
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.statistic h3 {
+    font-size: 2vw;
+    text-align: center;
+    margin: 2vh 0vw;
+    font-weight: 700;
+}
+
+.statistic div {
+    background-color: #1d6023;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.statistic div h4 {
+    font-size: 2vw;
+    text-align: center;
+}
+
+/* GALLERY (Gallery.jsx) */
+
+#galleryContainer {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    width: 85vmin;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    5% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-100%);
+    }
+    15% {
+        transform: translateX(-100%);
+    }
+    20% {
+        transform: translateX(-200%);
+    }
+    25% {
+        transform: translateX(-200%);
+    }
+    30% {
+        transform: translateX(-300%);
+    }
+    35% {
+        transform: translateX(-300%);
+    }
+    40% {
+        transform: translateX(-400%);
+    }
+    45% {
+        transform: translateX(-400%);
+    }
+    50% {
+        transform: translateX(-500%);
+    }
+    55% {
+        transform: translateX(-500%);
+    }
+    60% {
+        transform: translateX(-600%);
+    }
+    65% {
+        transform: translateX(-600%);
+    }
+    70% {
+        transform: translateX(-700%);
+    }
+    75% {
+        transform: translateX(-700%);
+    }
+    80% {
+        transform: translateX(-800%);
+    }
+    85% {
+        transform: translateX(-800%);
+    }
+    90% {
+        transform: translateX(-900%);
+    }
+    95% {
+        transform: translateX(-900%);
+    }
+    100% {
+        transform: translateX(-1000%);
+    }
+}
+
+.imageContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    animation-name: slide;
+    animation-duration: 50s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+}
+
+.imageContainer img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+/* REVIEWS (Review.jsx) */
+.reviews {
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+}
+
+.review {
+    background-color: #1d6023c7;
+    width: 50vw;
+    margin: 0vw 25vw;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.review .reviewSubmitter {
+    font-size: 1vw;
+    color: white;
+    font-style: italic;
+    text-align: right;
+}
+
+.review p {
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: white;
+    font-family: 'Roboto Slab';
+}
+
+.reviewContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    animation-name: slide;
+    animation-duration: 120s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+#submitReviewContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#submitReview {
+    margin-top: 5vh;
+    margin-bottom: 30px;
+    font-size: 2vw;
+    padding: 5px 20px;
+    background-color: #1d6023;
+    border-radius: 75px;
+    border: none;
+    font-weight: 700;
+}
+
+#submitReview a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* UNSDGs (UNSDG.jsx) */
+
+.unsdg {
+    display: block;
+    text-align: center;
+    padding: 20px 12vw;
+}
+
+.unsdg img {
+    width: 50vw;
+}
+
+.unsdg div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.unsdg div img {
+    width: 10vw;
+}
+
+.unsdg div #goal11 {
+    box-shadow: 0px 0px 20px 3px #fd9b24dd;
+}
+
+.unsdg div #goal12 {
+    box-shadow: 0px 0px 20px 3px #bf8b2e;
+}
+
+.unsdg div #goal13 {
+    box-shadow: 0px 0px 20px 3px #3f7e44;
+}
+
+/* ------------------------------------------------------ */
+
+.recycling {
+    display: flex;
+    flex-direction: column;
+}
+
+.recycling .bg {
+    align-self: flex-start;
+    width: 100vw;
+    object-fit: contain;
+    position: absolute;
+    margin-top: -8vh;
+    z-index: -1;
+    animation-name: opacity;
+    animation-duration: 3s;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+}
+
+
+.recycling .options {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.recycling .options h3 {
+    font-size: 3vw;
+    color: black;
+    text-transform: uppercase;
+    color: #1d6023;
+}
+
+.recycling .options p {
+    font-size: 1.5vw;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    margin-right: 15px;
+    width: 70vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.recycling .options p b {
+    color: #1d6023;
+    font-weight: 900;
+}
+
+.recycling .options p a {
+    color: #1d6023;
+    font-weight: 900;
+}
+
+.recycling .options img {
+    margin-top: 10px;
+    width: 20vw;
+    border-radius: 20px;
+}
+/* ---------------------------------------------------------------------------------- */
+
+#Campaigns .bg {
+    align-self: flex-start;
+    width: 100vw;
+    object-fit: contain;
+    position: absolute;
+    margin-top: -10vh;
+    z-index: -1;
+    animation-name: opacity;
+    animation-duration: 3s;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+}
+
+#Campaigns {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.campaignCard {
+    margin-top: 10vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.campaignCard img {
+    width: 15vw;
+    border-radius: 10px;
+}
+
+.campaignCard h3 {
+    color: #1d6023;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.campaignCard h4 {
+    text-align: center;
+}
+
+.campaignCard p {
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 400;
+    text-justify: auto;
+    font-family: 'Roboto Slab';
+}
+
+.campaignCard a {
+    margin-top: 5px;
+    font-size: 1.7vw;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #1d6023;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.campaignPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    /* margin: 10px; */
+    margin-top: 7vh;
+}
+
+.campaignPage .bg {
+    align-self: flex-start;
+    width: 100vw;
+    object-fit: contain;
+    position: absolute;
+    margin-top: -16vh;
+    z-index: -1;
+    animation-name: opacity;
+    animation-duration: 3s;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+}
+
+.campaignPage-heading {
+    font-size: 2.5vw;
+    text-align: center;
+    color: #1d6023;
+}
+
+.campaignPage-paragraph {
+    margin: 10px 2vw;
+    font-size: 1.5vw;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.campaignPage-paragraph a {
+    color: #1d6023;
+    font-weight: 900;
+}
+
+.campaignPage-imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.campaignPage-imageGallery img {
+    width: 25vw;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+#Awards .bg {
+    align-self: flex-start;
+    width: 100vw;
+    object-fit: contain;
+    position: absolute;
+    margin-top: -10vh;
+    z-index: -1;
+    animation-name: opacity;
+    animation-duration: 3s;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+}
+
+#Awards {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.award {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10vh;
+}
+
+.award img {
+    width: 25vw;
+    border-radius: 10px;
+}
+
+.award h3 {
+    color: #1d6023;
+    text-align: center;
+    font-size: 2vw;
+    width: 20vw;
+}
+
+@media (width <=1025px) {
+    /* NAV BAR (NavBar.jsx) */
+    nav{
+        background-color: transparent;
+        display: flex;
+        height: 8vh;
+        align-items: center;
+        padding: 0px 2vw;
+    }
+
+    nav div {
+        margin-left: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 70vw;
+        margin-top: 5vh;
+    }
+
+    nav div a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1.5vw;
+        font-weight: 600;
+    }
+
+    nav div a img {
+        width: 3.5rem;
+    }
+
+    /* LANDING SECTION (Landing.jsx) */
+
+    body {
+        /* background-color: aliceblue; */
+        /* background-image: url(src/components/2background.jpg); */
+        background-color: #f8fff8;
+        background-size: cover;
+        overflow-x: hidden;
+    }
+
+    p {
+        font-weight: 500;
+    }
+
+    @keyframes opacity {
+        from {opacity: 0}
+        to {opacity: 100}
+    }
+
+    .landing {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 0vw;
+    }
+
+    .landing div {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .landing img {
+        align-self: flex-start;
+        object-fit: contain;
+        position: absolute;
+        z-index: -1;
+        animation-name: opacity;
+        animation-duration: 3s;
+        width: 65vw;
+        margin-left: 18vw;
+        margin-top: 13vh;
+    }
+
+    .landing .backgroundTrans {
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+        margin-top: -8vh;
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    @keyframes rotate {
+        from {rotate: 0deg}
+        to {rotate: 360deg}
+    }
+
+    .landing .recyclingLogo {
+        width: 16vw;
+        animation-name: rotate;
+        animation-duration: 5s;
+        z-index: 1;
+        position: static;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+    .landing .logoContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .landing div h1 {
+        font-size: 6vw;
+        text-align: center;
+        color: #1d6023;
+        animation-name: opacity;
+        animation-duration: 3s;
+        width: 15rem;
+    }
+
+    .landing div h2 {
+        font-size: 3vw;
+        text-align: center;
+        font-weight: 500;
+        animation-name: opacity;
+        animation-duration: 3s;
+    }
+
+    .landing div button {
+        margin-top: -3vh;
+        font-size: 2.5vw;
+        padding: 5px 10px;
+        background-color: #1d6023;
+        color: #fff;
+        border-radius: 75px;
+        border: none;
+        font-weight: 700;
+        animation-name: opacity;
+        animation-duration: 3s;
+    }
+
+    /* FOUNDER MESSAGE (FounderMessage.jsx) */
+
+    .founderMessage {
+        margin-top: 60vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 3vw;
+    }
+
+    .founderMessage .profile {
+        padding: 2vw;
+        border-radius: 45px;
+    }
+
+    .founderMessage .profile img {
+        width: 25vw;
+        border-radius: 45px;
+        box-shadow: 0px 0px 30px 20px #d0f9c3;
+    }
+
+    .founderMessage .content {
+        width: 40vw;
+    }
+
+    .founderMessage .content h2 {
+        font-size: 3vw;
+        margin-bottom: 10px;
+        width: 48vw;
+        text-transform: uppercase;
+        color: #1d6023;
+    }
+
+    .founderMessage .content p {
+        font-size: 1.5vw;
+        width: 48vw;
+        text-justify: auto;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+    }
+
+    /* WHAT IS RECYCLING (WhatRecycling.jsx) */
+
+    .whatRecycling {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 6vw;
+    }
+
+    .whatRecycling img {
+        width: 25vw;
+    }
+
+    .whatRecycling .content h2 {
+        font-size: 3vw;
+        margin-bottom: 10px;
+        width: 48vw;
+        text-transform: uppercase;
+        color: #1d6023;
+    }
+
+    .whatRecycling .content p {
+        font-size: 1.5vw;
+        width: 48vw;
+        text-justify: auto;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+    }
+
+    /* HOW CAN YOU CONTRIBUTE (HowContribute.jsx) */
+
+    .howContribute {
+        display: block;
+        text-align: center;
+        padding: 20px 12vw;
+    }
+
+    .howContribute .content h2 {
+        font-size: 3vw;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: #1d6023;
+    }
+
+    .howContribute .content p {
+        font-size: 1.5vw;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+    }
+
+    .howContribute button {
+        margin-top: 3vh;
+        font-size: 2.5vw;
+        padding: 5px 10px;
+        background-color: #1d6023;
+        border-radius: 75px;
+        border: none;
+        font-weight: 700;
+    }
+
+    .howContribute button a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    /* STATISTICS (Statistic.jsx) */
+
+    .statisticContainer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 3vw;
+    }
+
+    .heading {
+        font-size: 3vw;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #1d6023;
+    }
+
+    .statistic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30vw;
+    }
+
+    .statistic img {
+        width: 10vw;
+        height: 10vw;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .statistic h3 {
+        font-size: 2vw;
+        text-align: center;
+        margin: 2vh 0vw;
+        font-weight: 700;
+    }
+
+    .statistic div {
+        background-color: #1d6023;
+        color: #fff;
+        border-radius: 20px;
+        padding: 5px 10px;
+    }
+
+    .statistic div h4 {
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    /* GALLERY (Gallery.jsx) */
+
+    #galleryContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery {
+        width: 85vmin;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        5% {
+            transform: translateX(0);
+        }
+        10% {
+            transform: translateX(-100%);
+        }
+        15% {
+            transform: translateX(-100%);
+        }
+        20% {
+            transform: translateX(-200%);
+        }
+        25% {
+            transform: translateX(-200%);
+        }
+        30% {
+            transform: translateX(-300%);
+        }
+        35% {
+            transform: translateX(-300%);
+        }
+        40% {
+            transform: translateX(-400%);
+        }
+        45% {
+            transform: translateX(-400%);
+        }
+        50% {
+            transform: translateX(-500%);
+        }
+        55% {
+            transform: translateX(-500%);
+        }
+        60% {
+            transform: translateX(-600%);
+        }
+        65% {
+            transform: translateX(-600%);
+        }
+        70% {
+            transform: translateX(-700%);
+        }
+        75% {
+            transform: translateX(-700%);
+        }
+        80% {
+            transform: translateX(-800%);
+        }
+        85% {
+            transform: translateX(-800%);
+        }
+        90% {
+            transform: translateX(-900%);
+        }
+        95% {
+            transform: translateX(-900%);
+        }
+        100% {
+            transform: translateX(-1000%);
+        }
+    }
+
+    .imageContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        animation-name: slide;
+        animation-duration: 50s;
+        animation-delay: 0;
+        animation-iteration-count: infinite;
+    }
+
+    .imageContainer img {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    /* REVIEWS (Review.jsx) */
+    .reviews {
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .review {
+        background-color: #1d6023c7;
+        width: 30vw;
+        margin: 0 35vw;
+        padding: 5px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+
+    .review .reviewSubmitter {
+        font-size: 1.1vw;
+        color: white;
+        font-style: italic;
+        text-align: right;
+    }
+    
+    .review p {
+        font-size: 1.2vw;
+        font-weight: 400;
+        color: white;
+        font-family: 'Roboto Slab';
+    }
+
+    #submitReviewContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    #submitReview {
+        margin-bottom: 5px;
+        font-size: 2vw;
+        padding: 5px 10px;
+        background-color: #1d6023;
+        border-radius: 75px;
+        border: none;
+        font-weight: 700;
+    }
+
+    #submitReview a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    /* UNSDGs (UNSDG.jsx) */
+
+    .unsdg {
+        display: block;
+        text-align: center;
+        padding: 20px 12vw;
+    }
+
+    .unsdg img {
+        width: 50vw;
+    }
+
+    .unsdg div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .unsdg div img {
+        width: 10vw;
+    }
+
+    .unsdg div #goal11 {
+        box-shadow: 0px 0px 20px 3px #fd9b24dd;
+    }
+
+    .unsdg div #goal12 {
+        box-shadow: 0px 0px 20px 3px #bf8b2e;
+    }
+
+    .unsdg div #goal13 {
+        box-shadow: 0px 0px 20px 3px #3f7e44;
+    }
+
+    /* ------------------------------------------------------ */
+
+    .recycling {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recycling .bg {
+        align-self: flex-start;
+        width: 100vw;
+        object-fit: contain;
+        position: absolute;
+        margin-top: -8vh;
+        z-index: -1;
+        animation-name: opacity;
+        animation-duration: 3s;
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+    }
+
+
+    .recycling .options {
+        background-color: transparent;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        margin: 20px;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .recycling .options h3 {
+        font-size: 3vw;
+        color: black;
+        text-transform: uppercase;
+        color: #1d6023;
+    }
+
+    .recycling .options p {
+        font-size: 1.5vw;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        margin-right: 15px;
+        width: 70vw;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .recycling .options p b {
+        color: #1d6023;
+        font-weight: 900;
+    }
+
+    .recycling .options p a {
+        color: #1d6023;
+        font-weight: 900;
+    }
+
+    .recycling .options img {
+        margin-top: 10px;
+        width: 20vw;
+        border-radius: 20px;
+    }
+    /* ---------------------------------------------------------------------------------- */
+
+    #Campaigns .bg {
+        align-self: flex-start;
+        width: 100vw;
+        object-fit: contain;
+        position: absolute;
+        margin-top: -10vh;
+        z-index: -1;
+        animation-name: opacity;
+        animation-duration: 3s;
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+    }
+
+    #Campaigns {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .campaignCard {
+        margin-top: 10vh;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25vw;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .campaignCard img {
+        width: 15vw;
+        border-radius: 10px;
+    }
+
+    .campaignCard h3 {
+        color: #1d6023;
+        text-align: center;
+        font-size: 2vw;
+        font-weight: 700;
+    }
+
+    .campaignCard h4 {
+        text-align: center;
+    }
+
+    .campaignCard p {
+        text-align: center;
+        font-size: 1.5vw;
+        font-weight: 400;
+        text-justify: auto;
+        font-family: 'Roboto Slab';
+    }
+
+    .campaignCard a {
+        margin-top: 5px;
+        font-size: 1.7vw;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #1d6023;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .campaignPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+        /* margin: 10px; */
+        margin-top: 7vh;
+    }
+
+    .campaignPage .bg {
+        align-self: flex-start;
+        width: 100vw;
+        object-fit: contain;
+        position: absolute;
+        margin-top: -16vh;
+        z-index: -1;
+        animation-name: opacity;
+        animation-duration: 3s;
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+    }
+
+    .campaignPage-heading {
+        font-size: 2.5vw;
+        text-align: center;
+        color: #1d6023;
+    }
+
+    .campaignPage-paragraph {
+        margin: 10px 2vw;
+        font-size: 1.5vw;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .campaignPage-imageGallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5vw;
+    }
+
+    .campaignPage-imageGallery img {
+        width: 25vw;
+    }
+
+    /* ---------------------------------------------------------------------------------- */
+
+    #Awards .bg {
+        align-self: flex-start;
+        width: 100vw;
+        object-fit: contain;
+        position: absolute;
+        margin-top: -10vh;
+        z-index: -1;
+        animation-name: opacity;
+        animation-duration: 3s;
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+    }
+
+    #Awards {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .award {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25vw;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10vh;
+    }
+
+    .award img {
+        width: 25vw;
+        border-radius: 10px;
+    }
+
+    .award h3 {
+        color: #1d6023;
+        text-align: center;
+        font-size: 2vw;
+        width: 20vw;
+    }
+}
+
+@media (width <=769px) {
+    /* NAV BAR (NavBar.jsx) */
+    nav{
+        background-color: transparent;
+        display: flex;
+        height: 8vh;
+        align-items: center;
+        padding: 0px 2vw;
+    }
+
+    nav div {
+        margin-left: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 70vw;
+        margin-top: 5vh;
+    }
+
+    nav div a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 2vw;
+        font-weight: 600;
+    }
+
+    nav div a img {
+        width: 2.7rem;
+    }
+
+    /* LANDING SECTION (Landing.jsx) */
+
+    body {
+        /* background-color: aliceblue; */
+        /* background-image: url(src/components/2background.jpg); */
+        background-color: #f8fff8;
+        background-size: cover;
+        overflow-x: hidden;
+    }
+
+    p {
+        font-weight: 500;
+    }
+
+    @keyframes opacity {
+        from {opacity: 0}
+        to {opacity: 100}
+    }
+
+    .landing {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 0vw;
+    }
+
+    .landing div {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .landing img {
+        align-self: flex-start;
+        object-fit: contain;
+        position: absolute;
+        z-index: -1;
+        animation-name: opacity;
+        animation-duration: 3s;
+        width: 80vw;
+        margin-left: 11vw;
+        margin-top: 19vh;
+    }
+
+    .landing .backgroundTrans {
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+        margin-top: -8vh;
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    @keyframes rotate {
+        from {rotate: 0deg}
+        to {rotate: 360deg}
+    }
+
+    .landing .recyclingLogo {
+        width: 20vw;
+        animation-name: rotate;
+        animation-duration: 5s;
+        z-index: 1;
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    .landing .logoContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .landing div h1 {
+        font-size: 7vw;
+        text-align: center;
+        color: #1d6023;
+        animation-name: opacity;
+        animation-duration: 3s;
+    }
+
+    .landing div h2 {
+        font-size: 4vw;
+        text-align: center;
+        font-weight: 500;
+        animation-name: opacity;
+        animation-duration: 3s;
+    }
+
+    .landing div button {
+        margin-top: -3vh;
+        font-size: 3vw;
+        padding: 3px 5px;
+        background-color: #1d6023;
+        color: #fff;
+        border-radius: 75px;
+        border: none;
+        font-weight: 700;
+        animation-name: opacity;
+        animation-duration: 3s;
+    }
+
+    /* FOUNDER MESSAGE (FounderMessage.jsx) */
+
+    .founderMessage {
+        margin-top: 60vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 3vw;
+    }
+
+    .founderMessage .profile {
+        padding: 2vw;
+        border-radius: 45px;
+    }
+
+    .founderMessage .profile img {
+        width: 25vw;
+        border-radius: 45px;
+        box-shadow: 0px 0px 30px 20px #d0f9c3;
+    }
+
+    .founderMessage .content {
+        width: 40vw;
+    }
+
+    .founderMessage .content h2 {
+        font-size: 4vw;
+        margin-bottom: 10px;
+        width: 48vw;
+        text-transform: uppercase;
+        color: #1d6023;
+    }
+
+    .founderMessage .content p {
+        font-size: 1.7vw;
+        width: 48vw;
+        text-justify: auto;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+    }
+
+    /* WHAT IS RECYCLING (WhatRecycling.jsx) */
+
+    .whatRecycling {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 6vw;
+    }
+
+    .whatRecycling img {
+        width: 25vw;
+    }
+
+    .whatRecycling .content h2 {
+        font-size: 4vw;
+        margin-bottom: 10px;
+        width: 48vw;
+        text-transform: uppercase;
+        color: #1d6023;
+    }
+
+    .whatRecycling .content p {
+        font-size: 1.7vw;
+        width: 48vw;
+        text-justify: auto;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+    }
+
+    /* HOW CAN YOU CONTRIBUTE (HowContribute.jsx) */
+
+    .howContribute {
+        display: block;
+        text-align: center;
+        padding: 20px 12vw;
+    }
+
+    .howContribute .content h2 {
+        font-size: 4vw;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: #1d6023;
+    }
+
+    .howContribute .content p {
+        font-size: 1.7vw;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+    }
+
+    .howContribute button {
+        margin-top: 3vh;
+        font-size: 2.5vw;
+        padding: 3px 5px;
+        background-color: #1d6023;
+        border-radius: 75px;
+        border: none;
+        font-weight: 700;
+    }
+
+    .howContribute button a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    /* STATISTICS (Statistic.jsx) */
+
+    .statisticContainer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 3vw;
+    }
+
+    .heading {
+        font-size: 4vw;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #1d6023;
+    }
+
+    .statistic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30vw;
+    }
+
+    .statistic img {
+        width: 10vw;
+        height: 10vw;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .statistic h3 {
+        font-size: 2vw;
+        text-align: center;
+        margin: 2vh 0vw;
+        font-weight: 700;
+    }
+
+    .statistic div {
+        background-color: #1d6023;
+        color: #fff;
+        border-radius: 20px;
+        padding: 3px 5px;
+    }
+
+    .statistic div h4 {
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    /* GALLERY (Gallery.jsx) */
+
+    #galleryContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery {
+        width: 85vmin;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        5% {
+            transform: translateX(0);
+        }
+        10% {
+            transform: translateX(-100%);
+        }
+        15% {
+            transform: translateX(-100%);
+        }
+        20% {
+            transform: translateX(-200%);
+        }
+        25% {
+            transform: translateX(-200%);
+        }
+        30% {
+            transform: translateX(-300%);
+        }
+        35% {
+            transform: translateX(-300%);
+        }
+        40% {
+            transform: translateX(-400%);
+        }
+        45% {
+            transform: translateX(-400%);
+        }
+        50% {
+            transform: translateX(-500%);
+        }
+        55% {
+            transform: translateX(-500%);
+        }
+        60% {
+            transform: translateX(-600%);
+        }
+        65% {
+            transform: translateX(-600%);
+        }
+        70% {
+            transform: translateX(-700%);
+        }
+        75% {
+            transform: translateX(-700%);
+        }
+        80% {
+            transform: translateX(-800%);
+        }
+        85% {
+            transform: translateX(-800%);
+        }
+        90% {
+            transform: translateX(-900%);
+        }
+        95% {
+            transform: translateX(-900%);
+        }
+        100% {
+            transform: translateX(-1000%);
+        }
+    }
+
+    .imageContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        animation-name: slide;
+        animation-duration: 50s;
+        animation-delay: 0;
+        animation-iteration-count: infinite;
+    }
+
+    .imageContainer img {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    /* REVIEWS (Review.jsx) */
+    .reviews {
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .review {
+        background-color: #1d6023c7;
+        width: 40vw;
+        margin: 0 30vw;
+        padding: 5px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+
+    .review .reviewSubmitter {
+        font-size: 1.4vw;
+        color: white;
+        font-style: italic;
+        text-align: right;
+    }
+    
+    .review p {
+        font-size: 1.5vw;
+        font-weight: 400;
+        color: white;
+        font-family: 'Roboto Slab';
+    }
+
+    #submitReviewContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    #submitReview {
+        margin-bottom: 5px;
+        font-size: 3vw;
+        padding: 3px 5px;
+        background-color: #1d6023;
+        border-radius: 75px;
+        border: none;
+        font-weight: 700;
+    }
+
+    #submitReview a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    /* UNSDGs (UNSDG.jsx) */
+
+    .unsdg {
+        display: block;
+        text-align: center;
+        padding: 20px 12vw;
+    }
+
+    .unsdg img {
+        width: 50vw;
+    }
+
+    .unsdg div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .unsdg div img {
+        width: 10vw;
+    }
+
+    .unsdg div #goal11 {
+        box-shadow: 0px 0px 20px 3px #fd9b24dd;
+    }
+
+    .unsdg div #goal12 {
+        box-shadow: 0px 0px 20px 3px #bf8b2e;
+    }
+
+    .unsdg div #goal13 {
+        box-shadow: 0px 0px 20px 3px #3f7e44;
+    }
+
+    /* ------------------------------------------------------ */
+
+    .recycling {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recycling .bg {
+        align-self: flex-start;
+        width: 100vw;
+        object-fit: contain;
+        position: absolute;
+        margin-top: -8vh;
+        z-index: -1;
+        animation-name: opacity;
+        animation-duration: 3s;
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+    }
+
+
+    .recycling .options {
+        background-color: transparent;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        margin: 10px 0px;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .recycling .options h3 {
+        font-size: 4vw;
+        color: black;
+        text-transform: uppercase;
+        color: #1d6023;
+    }
+
+    .recycling .options p {
+        font-size: 1.7vw;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        margin-right: 15px;
+        width: 70vw;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .recycling .options p b {
+        color: #1d6023;
+        font-weight: 900;
+    }
+
+    .recycling .options p a {
+        color: #1d6023;
+        font-weight: 900;
+    }
+
+    .recycling .options img {
+        margin-top: 10px;
+        width: 23vw;
+        border-radius: 20px;
+    }
+    /* ---------------------------------------------------------------------------------- */
+
+    #Campaigns .bg {
+        align-self: flex-start;
+        width: 100vw;
+        object-fit: contain;
+        position: absolute;
+        margin-top: -10vh;
+        z-index: -1;
+        animation-name: opacity;
+        animation-duration: 3s;
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+    }
+
+    #Campaigns {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .campaignCard {
+        margin-top: 10vh;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45vw;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .campaignCard img {
+        width: 20vw;
+        border-radius: 10px;
+    }
+
+    .campaignCard h3 {
+        color: #1d6023;
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 700;
+    }
+
+    .campaignCard h4 {
+        text-align: center;
+    }
+
+    .campaignCard p {
+        text-align: center;
+        font-size: 1.7vw;
+        font-weight: 400;
+        text-justify: auto;
+        font-family: 'Roboto Slab';
+    }
+
+    .campaignCard a {
+        margin-top: 5px;
+        font-size: 1.7vw;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #1d6023;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .campaignPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+        /* margin: 10px; */
+        margin-top: 7vh;
+    }
+
+    .campaignPage .bg {
+        align-self: flex-start;
+        width: 100vw;
+        object-fit: contain;
+        position: absolute;
+        margin-top: -16vh;
+        z-index: -1;
+        animation-name: opacity;
+        animation-duration: 3s;
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+    }
+
+    .campaignPage-heading {
+        font-size: 4vw;
+        text-align: center;
+        color: #1d6023;
+    }
+
+    .campaignPage-paragraph {
+        margin: 10px 2vw;
+        font-size: 2vw;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .campaignPage-imageGallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5vw;
+    }
+
+    .campaignPage-imageGallery img {
+        width: 25vw;
+    }
+
+    /* ---------------------------------------------------------------------------------- */
+
+    #Awards .bg {
+        align-self: flex-start;
+        width: 100vw;
+        object-fit: contain;
+        position: absolute;
+        margin-top: -10vh;
+        z-index: -1;
+        animation-name: opacity;
+        animation-duration: 3s;
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+    }
+
+    #Awards {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .award {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45vw;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10vh;
+    }
+
+    .award img {
+        width: 25vw;
+        border-radius: 10px;
+    }
+
+    .award h3 {
+        color: #1d6023;
+        text-align: center;
+        font-size: 3vw;
+        width: 30vw;
+    }
+}
+
+@media (width <=426px) {
+    /* NAV BAR (NavBar.jsx) */
+    nav{
+        background-color: transparent;
+        display: flex;
+        height: 8vh;
+        align-items: center;
+        padding: 0px 2vw;
+    }
+
+    nav div {
+        margin-left: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 95vw;
+        margin-top: 5vh;
+    }
+
+    nav div a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 3vw;
+        font-weight: 700;
+    }
+
+    nav div a img {
+        width: 1.7rem;
+    }
+
+    /* LANDING SECTION (Landing.jsx) */
+
+    body {
+        /* background-color: aliceblue; */
+        /* background-image: url(src/components/2background.jpg); */
+        background-color: #f8fff8;
+        background-size: cover;
+        overflow-x: hidden;
+    }
+
+    p {
+        font-weight: 500;
+    }
+
+    @keyframes opacity {
+        from {opacity: 0}
+        to {opacity: 100}
+    }
+
+    .landing {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 0vw;
+    }
+
+    .landing div {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .landing img {
+        align-self: flex-start;
+        object-fit: contain;
+        position: absolute;
+        z-index: -1;
+        animation-name: opacity;
+        animation-duration: 3s;
+        width: 80vw;
+        margin-left: 11vw;
+        margin-top: 25vh;
+    }
+
+    .landing .backgroundTrans {
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+        margin-top: -8vh;
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    @keyframes rotate {
+        from {rotate: 0deg}
+        to {rotate: 360deg}
+    }
+
+    .landing .recyclingLogo {
+        width: 27vw;
+        animation-name: rotate;
+        animation-duration: 5s;
+        z-index: 1;
+        position: static;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .landing .logoContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .landing div h1 {
+        font-size: 9vw;
+        text-align: center;
+        color: #1d6023;
+        animation-name: opacity;
+        animation-duration: 3s;
+        width: 10rem;
+    }
+
+    .landing div h2 {
+        font-size: 4.5vw;
+        text-align: center;
+        font-weight: 500;
+        animation-name: opacity;
+        animation-duration: 3s;
+    }
+
+    .landing div button {
+        margin-top: -3vh;
+        font-size: 4vw;
+        padding: 3px 8px;
+        background-color: #1d6023;
+        color: #fff;
+        border-radius: 75px;
+        border: none;
+        font-weight: 700;
+        animation-name: opacity;
+        animation-duration: 3s;
+    }
+
+    /* FOUNDER MESSAGE (FounderMessage.jsx) */
+
+    .founderMessage {
+        margin-top: 25vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 3vw;
+
+    }
+
+    .founderMessage .profile {
+        padding: 2vw;
+        border-radius: 45px;
+        width: 30vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .founderMessage .profile img {
+        margin-top: 2vh;
+        width: 30vw;
+        border-radius: 45px;
+        box-shadow: 0px 0px 30px 10px #d0f9c3;
+    }
+
+    .founderMessage .content h2 {
+        font-size: 5.5vw;
+        margin-bottom: 10px;
+        width: 45vw;
+        text-transform: uppercase;
+        color: #1d6023;
+    }
+
+    .founderMessage .content p {
+        font-size: 3.3vw;
+        width: 45vw;
+        text-justify: auto;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+    }
+
+    /* WHAT IS RECYCLING (WhatRecycling.jsx) */
+
+    .whatRecycling {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 6vw;
+        flex-wrap: wrap;
+    }
+
+    .whatRecycling img {
+        width: 35vw;
+        margin-top: 2vh;
+    }
+
+    .whatRecycling .content {
+        width: 80vw;
+    }
+
+    .whatRecycling .content h2 {
+        font-size: 5.5vw;
+        margin-bottom: 10px;
+        width: 80vw;
+        text-transform: uppercase;
+        color: #1d6023;
+        text-align: center;
+    }
+
+    .whatRecycling .content p {
+        font-size: 3.3vw;
+        width: 80vw;
+        text-justify: auto;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        text-align: center;
+    }
+
+    /* HOW CAN YOU CONTRIBUTE (HowContribute.jsx) */
+
+    .howContribute {
+        display: block;
+        text-align: center;
+        padding: 20px 6vw;
+        margin: 0;
+    }
+
+    .howContribute .content h2 {
+        font-size: 5.5vw;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: #1d6023;
+    }
+
+    .howContribute .content p {
+        font-size: 3.3vw;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+    }
+
+    .howContribute button {
+        margin-top: 3vh;
+        font-size: 4vw;
+        padding: 3px 8px;
+        background-color: #1d6023;
+        border-radius: 75px;
+        border: none;
+        font-weight: 700;
+    }
+
+    .howContribute button a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    /* STATISTICS (Statistic.jsx) */
+
+    .statisticContainer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 3vw;
+        flex-wrap: wrap;
+    }
+
+    .heading {
+        font-size: 5.5vw;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #1d6023;
+        margin: 0;
+    }
+
+    .statistic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45vw;
+        margin-bottom: 20px;
+    }
+
+    .statistic img {
+        width: 25vw;
+        height: 25vw;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .statistic h3 {
+        font-size: 3.3vw;
+        text-align: center;
+        margin: 2vh 0vw;
+        font-weight: 700;
+    }
+
+    .statistic div {
+        background-color: #1d6023;
+        color: #fff;
+        border-radius: 20px;
+        padding: 3px 8px;
+    }
+
+    .statistic div h4 {
+        font-size: 3.3vw;
+        text-align: center;
+    }
+
+    /* GALLERY (Gallery.jsx) */
+
+    #galleryContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .gallery {
+        width: 70vmin;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        5% {
+            transform: translateX(0);
+        }
+        10% {
+            transform: translateX(-100%);
+        }
+        15% {
+            transform: translateX(-100%);
+        }
+        20% {
+            transform: translateX(-200%);
+        }
+        25% {
+            transform: translateX(-200%);
+        }
+        30% {
+            transform: translateX(-300%);
+        }
+        35% {
+            transform: translateX(-300%);
+        }
+        40% {
+            transform: translateX(-400%);
+        }
+        45% {
+            transform: translateX(-400%);
+        }
+        50% {
+            transform: translateX(-500%);
+        }
+        55% {
+            transform: translateX(-500%);
+        }
+        60% {
+            transform: translateX(-600%);
+        }
+        65% {
+            transform: translateX(-600%);
+        }
+        70% {
+            transform: translateX(-700%);
+        }
+        75% {
+            transform: translateX(-700%);
+        }
+        80% {
+            transform: translateX(-800%);
+        }
+        85% {
+            transform: translateX(-800%);
+        }
+        90% {
+            transform: translateX(-900%);
+        }
+        95% {
+            transform: translateX(-900%);
+        }
+        100% {
+            transform: translateX(-1000%);
+        }
+    }
+
+    .imageContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        animation-name: slide;
+        animation-duration: 50s;
+        animation-delay: 0;
+        animation-iteration-count: infinite;
+    }
+
+    .imageContainer img {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    /* REVIEWS (Review.jsx) */
+    .reviews {
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .review {
+        background-color: #1d6023c7;
+        width: 80vw;
+        margin: 0 10vw;
+        padding: 5px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+
+    .review .reviewSubmitter {
+        font-size: 2.5vw;
+        color: white;
+        font-style: italic;
+        text-align: right;
+    }
+    
+    .review p {
+        font-size: 2.7vw;
+        font-weight: 400;
+        color: white;
+        font-family: 'Roboto Slab';
+    }
+
+    #submitReviewContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    #submitReview {
+        margin-bottom: 5px;
+        font-size: 4vw;
+        padding: 3px 8px;
+        background-color: #1d6023;
+        border-radius: 75px;
+        border: none;
+        font-weight: 700;
+    }
+
+    #submitReview a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    /* UNSDGs (UNSDG.jsx) */
+
+    .unsdg {
+        display: block;
+        text-align: center;
+        padding: 20px 12vw;
+    }
+
+    .unsdg img {
+        width: 70vw;
+    }
+
+    .unsdg div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .unsdg div img {
+        width: 15vw;
+    }
+
+    .unsdg div #goal11 {
+        box-shadow: 0px 0px 20px 3px #fd9b24dd;
+    }
+
+    .unsdg div #goal12 {
+        box-shadow: 0px 0px 20px 3px #bf8b2e;
+    }
+
+    .unsdg div #goal13 {
+        box-shadow: 0px 0px 20px 3px #3f7e44;
+    }
+
+    /* ------------------------------------------------------ */
+
+    .recycling {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recycling .bg {
+        align-self: flex-start;
+        width: 100vw;
+        object-fit: contain;
+        position: absolute;
+        margin-top: -8vh;
+        z-index: -1;
+        animation-name: opacity;
+        animation-duration: 3s;
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+    }
+
+
+    .recycling .options {
+        background-color: transparent;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        margin: 10px 0px;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .recycling .options h3 {
+        font-size: 6vw;
+        color: black;
+        text-transform: uppercase;
+        color: #1d6023;
+    }
+
+    .recycling .options p {
+        text-align: justify;
+        text-justify: inter-word;
+        font-size: 3.5vw;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        margin-right: 15px;
+        width: 86vw;
+    }
+
+    .recycling .options p b {
+        color: #1d6023;
+        font-weight: 900;
+    }
+
+    .recycling .options p a {
+        color: #1d6023;
+        font-weight: 900;
+    }
+
+    .recycling .options img {
+        margin-top: 10px;
+        width: 45vw;
+        border-radius: 20px;
+    }
+    /* ---------------------------------------------------------------------------------- */
+
+    #Campaigns .bg {
+        align-self: flex-start;
+        width: 100vw;
+        object-fit: contain;
+        position: absolute;
+        margin-top: -10vh;
+        z-index: -1;
+        animation-name: opacity;
+        animation-duration: 3s;
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+    }
+
+    #Campaigns {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .campaignCard {
+        margin-top: 5vh;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .campaignCard img {
+        width: 45vw;
+        border-radius: 10px;
+    }
+
+    .campaignCard h3 {
+        color: #1d6023;
+        text-align: center;
+        font-size: 6vw;
+        font-weight: 700;
+    }
+
+    .campaignCard h4 {
+        text-align: center;
+    }
+
+    .campaignCard p {
+        font-size: 3.5vw;
+        font-weight: 400;
+        text-justify: auto;
+        font-family: 'Roboto Slab';
+    }
+
+    .campaignCard a {
+        margin-top: 5px;
+        font-size: 3vw;
+        padding: 5px 15px;
+        border-radius: 10px;
+        background-color: #1d6023;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .campaignPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+        /* margin: 10px; */
+        margin-top: 7vh;
+    }
+
+    .campaignPage .bg {
+        align-self: flex-start;
+        width: 100vw;
+        object-fit: contain;
+        position: absolute;
+        margin-top: -16vh;
+        z-index: -1;
+        animation-name: opacity;
+        animation-duration: 3s;
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+    }
+
+    .campaignPage-heading {
+        font-size: 5.5vw;
+        text-align: center;
+        color: #1d6023;
+    }
+
+    .campaignPage-paragraph {
+        margin: 10px 2vw;
+        font-size: 3.3vw;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .campaignPage-imageGallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5vw;
+    }
+
+    .campaignPage-imageGallery img {
+        width: 40vw;
+        margin-bottom: 5px;
+    }
+
+    /* ---------------------------------------------------------------------------------- */
+
+    #Awards .bg {
+        align-self: flex-start;
+        width: 100vw;
+        object-fit: contain;
+        position: absolute;
+        margin-top: -10vh;
+        z-index: -1;
+        animation-name: opacity;
+        animation-duration: 3s;
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0)));
+    }
+
+    #Awards {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .award {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10vh;
+    }
+
+    .award img {
+        width: 45vw;
+        border-radius: 10px;
+    }
+
+    .award h3 {
+        color: #1d6023;
+        text-align: center;
+        font-size: 6vw;
+        width: 90vw;
+    }
+}
