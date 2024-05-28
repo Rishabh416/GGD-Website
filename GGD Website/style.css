@@ -725,6 +725,13 @@ p {
     width: 20vw;
 }
 
+.award a, a:visited {
+    color: #1d6023;
+    text-align: center;
+    font-size: 2vw;
+    width: 20vw;
+}
+
 @media (width <=1025px) {
     /* NAV BAR (NavBar.jsx) */
     nav{
