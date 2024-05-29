@@ -725,7 +725,7 @@ p {
     width: 20vw;
 }
 
-.award a, a:visited {
+.award a, .award a:visited {
     color: #1d6023;
     text-align: center;
     font-size: 2vw;
