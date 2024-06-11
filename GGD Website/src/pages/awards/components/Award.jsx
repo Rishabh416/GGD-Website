@@ -5,6 +5,7 @@ import diaaward from "../assets/diaaward.jpeg"
 import youthday from "../assets/youthday.jpeg"
 import WorldEnvironmentDayCertificate from "../assets/WEDcertificate.png"
 import greenClimateAward from "../assets/greenClimateAward.jpg"
+import hundredArticle from "../assets/hundredArticle.png"
 
 export default function Award(props) {
 
@@ -33,6 +34,10 @@ export default function Award(props) {
         
         case "6":
             image = greenClimateAward
+            break;
+
+        case "7":
+            image = hundredArticle
             break;
     
         default:

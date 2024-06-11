@@ -6,6 +6,7 @@ export default function Awards() {
     return(
         <div id="Awards">
             <img src={bg} alt="" className="bg"/>
+            <Award img="7" title={<a href="https://hundred.org/en/articles/these-youth-led-social-impact-projects-will-inspire-you">Featured by HundrED for Inspirational Youth-led Social Impact Projects</a>}/>
             <Award img="6" title='Recognized as "Green Climate Ambassador" for Enviroserve UAE'/>
             <Award img="5" title="Certificate of Recognition for World Environment Day - Collected and Recycled 1,007 Kgs of E-waste"/>
             <Award img="3" title="Dubai International Academy, Emirates Hills - End Of Year Recognition Award for Sustainability"/>
