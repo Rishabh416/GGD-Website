@@ -1424,6 +1424,13 @@ p {
         font-size: 2vw;
         width: 20vw;
     }
+
+    .award a, .award a:visited {
+        color: #1d6023;
+        text-align: center;
+        font-size: 2vw;
+        width: 20vw;
+    }
 }
 
 @media (width <=769px) {
@@ -2111,6 +2118,13 @@ p {
     }
 
     .award h3 {
+        color: #1d6023;
+        text-align: center;
+        font-size: 3vw;
+        width: 30vw;
+    }
+
+    .award a, .award a:visited {
         color: #1d6023;
         text-align: center;
         font-size: 3vw;
@@ -2819,6 +2833,13 @@ p {
     }
 
     .award h3 {
+        color: #1d6023;
+        text-align: center;
+        font-size: 6vw;
+        width: 90vw;
+    }
+
+    .award a, .award a:visited {
         color: #1d6023;
         text-align: center;
         font-size: 6vw;
