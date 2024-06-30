@@ -6,6 +6,7 @@ import youthday from "../assets/youthday.jpeg"
 import WorldEnvironmentDayCertificate from "../assets/WEDcertificate.png"
 import greenClimateAward from "../assets/greenClimateAward.jpg"
 import hundredArticle from "../assets/hundredArticle.png"
+import earthwisePodcast from "../assets/earthwisePodcast.png"
 
 export default function Award(props) {
 
@@ -38,6 +39,10 @@ export default function Award(props) {
 
         case "7":
             image = hundredArticle
+            break;
+
+        case "8":
+            image = earthwisePodcast
             break;
     
         default:
