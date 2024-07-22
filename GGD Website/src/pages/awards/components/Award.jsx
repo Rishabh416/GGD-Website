@@ -7,6 +7,7 @@ import WorldEnvironmentDayCertificate from "../assets/WEDcertificate.png"
 import greenClimateAward from "../assets/greenClimateAward.jpg"
 import hundredArticle from "../assets/hundredArticle.png"
 import earthwisePodcast from "../assets/earthwisePodcast.png"
+import ecobee from "../assets/ecobee.png"
 
 export default function Award(props) {
 
@@ -43,6 +44,10 @@ export default function Award(props) {
 
         case "8":
             image = earthwisePodcast
+            break;
+
+        case "9":
+            image = ecobee
             break;
     
         default:
