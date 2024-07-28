@@ -22,8 +22,8 @@ export default function Home(){
             <h2 className='heading'>Our Statistics</h2>
             <div className='statisticContainer'>
                 <Statistic image="source 1" title="Plastic Bottles Recycled" value="12,805 bottles"/> {/*700 for reborn*/}
-                <Statistic image="source 2" title="E-waste Collected & Recycled" value="4,023 Kgs"/>
-                <Statistic image="source 4" title="Paper Collected & Recycled" value="684 Kgs"/>
+                <Statistic image="source 2" title="E-waste Collected & Recycled" value="4,208 Kgs"/>
+                <Statistic image="source 4" title="Paper Collected & Recycled" value="687 Kgs"/>
                 <Statistic image="source 3" title="CO2 Emissions Reduced" value="12,983 Kgs"/>
                 {/* 166 grams = 1L plastic bottle */}
             </div>
