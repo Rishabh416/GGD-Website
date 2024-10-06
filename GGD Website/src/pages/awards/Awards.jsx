@@ -6,6 +6,7 @@ export default function Awards() {
     return(
         <div id="Awards">
             <img src={bg} alt="" className="bg"/>
+            <Award img="10" title={<a href="https://www.khaleejtimes.com/uae/education/dubai-academy-named-finalist-for-worlds-best-schools-with-its-environment-initiatives">Featured on Khaleej Times for a standout initiative that gained widespread support from the community</a>}/>
             <Award img="8" title={<a href="https://open.spotify.com/episode/4OM56nZA83DXQHgnOUR2CB?si=1bZm4763SUWZnw189HaInQ&nd=1&dlsi=24e414e9a0024583">Featured on World Environment Day for creating a sustainable future by EarthWise podcast</a>}/>
             <Award img="7" title={<a href="https://hundred.org/en/articles/these-youth-led-social-impact-projects-will-inspire-you">Featured by HundrED, a global mission-driven organization, for Inspirational Youth-led Social Impact Projects</a>}/>
             <Award img="6" title='Recognized as "Green Climate Ambassador" for Enviroserve UAE'/>

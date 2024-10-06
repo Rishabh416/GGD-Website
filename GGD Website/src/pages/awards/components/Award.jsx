@@ -8,6 +8,7 @@ import greenClimateAward from "../assets/greenClimateAward.jpg"
 import hundredArticle from "../assets/hundredArticle.png"
 import earthwisePodcast from "../assets/earthwisePodcast.png"
 import ecobee from "../assets/ecobee.png"
+import khaleejTimes from "../assets/khaleejtimes.jpg"
 
 export default function Award(props) {
 
@@ -48,6 +49,10 @@ export default function Award(props) {
 
         case "9":
             image = ecobee
+            break;
+        
+        case "10":
+            image = khaleejTimes
             break;
     
         default:
