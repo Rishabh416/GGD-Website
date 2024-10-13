@@ -24,7 +24,7 @@ export default function Home(){
                 <Statistic image="source 1" title="Plastic Bottles Recycled" value="16,110 bottles"/> {/*700 for reborn*/}
                 <Statistic image="source 2" title="E-waste Collected & Recycled" value="4,342 Kgs"/>
                 <Statistic image="source 4" title="Paper Collected & Recycled" value="801 Kgs"/>
-                <Statistic image="source 3" title="CO2 Emissions Reduced" value="12,983 Kgs"/> {/* To be updated */}
+                <Statistic image="source 3" title="CO2 Emissions Reduced" value="8,951 Kgs"/> {/* To be updated */}
                 {/* 166 grams = 1L plastic bottle */}
             </div>
             <br />
