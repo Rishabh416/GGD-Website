@@ -21,9 +21,9 @@ export default function Home(){
             <br />
             <h2 className='heading'>Our Statistics</h2>
             <div className='statisticContainer'>
-                <Statistic image="source 1" title="Plastic Bottles Recycled" value="16,110 bottles"/> {/*700 for reborn*/}
-                <Statistic image="source 2" title="E-waste Collected & Recycled" value="4490 Kgs"/>
-                <Statistic image="source 4" title="Paper Collected & Recycled" value="900 Kgs"/>
+                <Statistic image="source 1" title="Plastic Bottles Recycled" value="16,824 bottles"/> {/*700 for reborn*/}
+                <Statistic image="source 2" title="E-waste Collected & Recycled" value="5161 Kgs"/>
+                <Statistic image="source 4" title="Paper Collected & Recycled" value="957 Kgs"/>
                 <Statistic image="source 3" title="CO2 Emissions Reduced" value="8,951 Kgs"/> {/* To be updated */}
                 {/* 166 grams = 1L plastic bottle */}
             </div>
@@ -40,7 +40,7 @@ export default function Home(){
                     <Review name="Ms. Richa Bansal - Ecobee.ae" content="You are doing an amazing job Rishabh… I hope many more youth think like you … currently recycling rate is only 9% but with efforts like your firm… am sure we can increase the recycling and reduce waste… keep it up and more power to you." />
                 </div>
                 <div className='reviewContainer'>
-                    <Review name="Mrs. Anju Goel" content="We are very impressed by your initiative towards reducing waste & helping the environment. I hope you are able to motivate more youngsters in this endeavour. Keep up the good work 👏" />
+                    <Review name="Ms. Archita" content="Rishabh is doing a wonderful work for the society and environment. I wish him luck today for a better tomorrow for coming generations." />
                 </div>
                 <div className='reviewContainer'>
                     <Review name="Ms. Christiana Solomou " content="I was always wondering if the contents in the recycling bins of our community were indeed being recycled, so I was truly glad to get to know about Going Green Dubai.This initiative by this young man is commendable and inspiring. Keep up the good work and effort towards a greener planet, Rishabh - hopefully, more youth will follow your lead! " />

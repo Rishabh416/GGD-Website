@@ -6,6 +6,7 @@ import reborncreations from "../assets/RebornCreations.jpg"
 import zelooplogo from "../assets/zeLoopLogo.png"
 import paperCampaign from "../assets/paperCampaign.jpeg"
 import innoventuresLogo from "../assets/innoventuresEdu.jpg"
+import diaehposter from "../assets/diaehposter.jpg"
 
 export default function CampaignCard(props) {
 
@@ -35,7 +36,11 @@ export default function CampaignCard(props) {
         case "6":
             image = innoventuresLogo
             break;
-    
+
+        case "7":
+            image = diaehposter
+            break;
+
         default:
             break;
     }
