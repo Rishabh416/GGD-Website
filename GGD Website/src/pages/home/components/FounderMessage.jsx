@@ -13,7 +13,7 @@ export default function FounderMessage() {
       <div className="content">
         <h2>Message from Founder</h2>
         <p>
-          Going Green Dubai is a platform to inspire communities and youth to
+          Going Green Dubai is a youth led non-profit initiative to inspire communities and youth to
           join the cause for recycling and work towards sustainability. As an
           Environmental Enthusiast, I feel it is time to take action by reducing
           plastic, paper and E-waste by embracing Eco-friendly solutions.{" "}
