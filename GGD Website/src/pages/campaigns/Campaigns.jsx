@@ -7,6 +7,13 @@ export default function Campaigns() {
     <div id="Campaigns">
       <img src={bg} alt="" className="bg" />
       <CampaignCard
+        img="8"
+        title="E-waste Recycling Campaign at Emaar Community Malls"
+        date="November 15th 2024 - December 15th 2024"
+        text="An E-waste recycling campaign was initiated to raise awareness and provide easy access for community members to responsibly recycle their electronic waste across Emaar Community Malls. The joint efforts of the community has resulted in the collection of 470 kg of electronic waste. "
+      />
+
+      <CampaignCard
         img="7"
         title="E-waste Recycling Campaign at Innoventures Education Campuses"
         date="November 15th 2024 - December 15th 2024"

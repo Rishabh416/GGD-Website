@@ -13,6 +13,7 @@ import mail from "./components/mail.png";
 import Campaign5 from "./pages/campaigns/campaignPages/Campaign5.jsx";
 import Campaign6 from "./pages/campaigns/campaignPages/Campaign6.jsx";
 import Campaign7 from "./pages/campaigns/campaignPages/Campaign7.jsx";
+import Campaign8 from "./pages/campaigns/campaignPages/Campaign8.jsx";
 
 export default function App() {
   return (
@@ -44,6 +45,7 @@ export default function App() {
           <Route path="/campaigns/campaign5" element={<Campaign5 />}></Route>
           <Route path="/campaigns/campaign6" element={<Campaign6 />}></Route>
           <Route path="/campaigns/campaign7" element={<Campaign7 />}></Route>
+          <Route path="/campaigns/campaign8" element={<Campaign8 />}></Route>
         </Routes>
       </div>
     </Router>

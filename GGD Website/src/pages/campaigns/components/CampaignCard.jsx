@@ -7,6 +7,7 @@ import zelooplogo from "../assets/zeLoopLogo.png";
 import paperCampaign from "../assets/paperCampaign.jpeg";
 import innoventuresLogo from "../assets/innoventuresEdu.jpg";
 import diaehposter from "../assets/diaehposter.jpg";
+import emaarlogo from "../assets/emaarlogo.png"
 
 export default function CampaignCard(props) {
   let image;
@@ -38,6 +39,10 @@ export default function CampaignCard(props) {
 
     case "7":
       image = diaehposter;
+      break;
+
+    case "8":
+      image = emaarlogo;
       break;
 
     default:
