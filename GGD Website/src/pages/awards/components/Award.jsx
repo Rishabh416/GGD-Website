@@ -9,6 +9,7 @@ import hundredArticle from "../assets/hundredArticle.png";
 import earthwisePodcast from "../assets/earthwisePodcast.png";
 import ecobee from "../assets/ecobee.png";
 import khaleejTimes from "../assets/khaleejtimes.jpg";
+import globalRecyclingHero from "../assets/globalRecyclingHero.png"
 
 export default function Award(props) {
   let image;
@@ -52,6 +53,10 @@ export default function Award(props) {
 
     case "10":
       image = khaleejTimes;
+      break;
+
+    case "11":
+      image = globalRecyclingHero;
       break;
 
     default:

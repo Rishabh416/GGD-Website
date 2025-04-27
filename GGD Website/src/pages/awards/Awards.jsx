@@ -7,6 +7,15 @@ export default function Awards() {
     <div id="Awards">
       <img src={bg} alt="" className="bg" />
       <Award
+        img="11"
+        title={
+          <a href="https://www.khaleejtimes.com/uae/dubai-student-helps-place-ewaste-bins-malls">
+            Featured on Khaleej Times for being recognized as a Global Recycling Hero 2025 by the Global Recycling Foundation
+          </a>
+        }
+      />
+      
+      <Award
         img="10"
         title={
           <a href="https://www.khaleejtimes.com/uae/education/dubai-academy-named-finalist-for-worlds-best-schools-with-its-environment-initiatives">
