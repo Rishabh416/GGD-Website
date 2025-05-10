@@ -29,12 +29,12 @@ export default function Home() {
         <Statistic
           image="source 2"
           title="E-waste Collected & Recycled"
-          value="5645 Kgs"
+          value="5860 Kgs"
         />
         <Statistic
           image="source 4"
           title="Paper Collected & Recycled"
-          value="1323 Kgs"
+          value="1460 Kgs"
         />
         <Statistic
           image="source 3"
