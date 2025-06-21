@@ -23,18 +23,18 @@ export default function Home() {
         <Statistic
           image="source 1"
           title="Plastic Bottles Recycled"
-          value="17,557 bottles"
+          value="18,515 bottles"
         />{" "}
-        {/*700 for reborn*/}
+        {/*+750 for extra*/}
         <Statistic
           image="source 2"
           title="E-waste Collected & Recycled"
-          value="5860 Kgs"
+          value="6142 Kgs"
         />
         <Statistic
           image="source 4"
           title="Paper Collected & Recycled"
-          value="1460 Kgs"
+          value="1564 Kgs"
         />
         <Statistic
           image="source 3"
