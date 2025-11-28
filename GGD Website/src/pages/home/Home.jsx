@@ -23,26 +23,25 @@ export default function Home() {
         <Statistic
           image="source 1"
           title="Plastic Bottles Recycled"
-          value="18,515 bottles"
+          value="20,115 bottles"
         />{" "}
         {/*+750 for extra*/}
         <Statistic
           image="source 2"
           title="E-waste Collected & Recycled"
-          value="6,271 Kgs"
+          value="7,435 Kgs"
         />
         <Statistic
           image="source 4"
           title="Paper Collected & Recycled"
-          value="1586 Kgs"
+          value="1993 Kgs"
         />
         <Statistic
           image="source 3"
           title="CO2 Emissions Reduced"
-          value="8,951 Kgs"
-        />{" "}
-        {/* To be updated */}
-        {/* 166 grams = 1L plastic bottle */}
+          value="16,202 Kgs"
+        />
+        {/* 0.1 per bottle, 1.75 per e-waste, 1.5 per paper */}
       </div>
       <br />
       <div id="galleryContainer">
