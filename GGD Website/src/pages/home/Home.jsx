@@ -34,7 +34,7 @@ export default function Home() {
         <Statistic
           image="source 4"
           title="Paper Collected & Recycled"
-          value="2,792 Kgs"
+          value="2,922 Kgs"
         />
         <Statistic
           image="source 3"
